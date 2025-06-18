@@ -1,0 +1,26 @@
+h1 {
+  border-bottom: 2px solid gray;
+  width: 7%;
+}
+
+input.in {
+  padding: 10px;
+  padding-right: 100px;
+  border-radius: 25px;
+  margin: 10px;
+}
+p.id {
+  border: 1px solid;
+  padding: 2px;
+  max-width: 50px;
+  background-color: gray;
+  margin: 0%;
+  margin-left: 10px;
+}
+button.dk {
+  padding: 15px 40px;
+  border-radius: 25px;
+  margin-left: 80px;
+  background-color: red;
+  color: white;
+}
