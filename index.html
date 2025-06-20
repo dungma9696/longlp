@@ -6,17 +6,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
   </head>
+  <script>
+    var database = function(){
+      var name = document.getElementById("fullname").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("phone").value;
+      var db =
+        "Bạn đã đăng ký thành công: <br>" +
+        "Họ tên: " + name + "<br>" +
+        "Email: " + email + "<br>" +
+        "Số điện thoại: " + phone + "<br>";
+      document.getElementById("db").innerHTML = db
+      document.getElementById("formsubmit").reset();
+    }
+    
+  </script>
   <br>
     <h1>Đăng ký</h1>
-    <input class="in" type="text" placeholder="Họ Tên"> <br>
-    <input class="in" type="email" placeholder="Email"> <br>
-    <input class="in" type="tel" placeholder="Số Điện Thoại"> <br>
-    <input class="in" type="password" placeholder="Mật khẩu"> <br>
-    <input class="in" type="password" placeholder="Lấy lại mật khẩu"> <br>
-    <p class="id">9e573</p>
-    <input class="in" type="text" placeholder="Nhập mã trên"> <br>
-    <button class="dk" type="button" onclick="alert('Đăng ký thành công')">Đăng ký</button>
+    <form id="formsubmit">
+      <input class="in" id="fullname" type="text" placeholder="Họ Tên" value=""> <br>
+      <input class="in" id="email" type="email" placeholder="Email" value=""> <br>
+      <input class="in" id="phone" type="tel" placeholder="Số Điện Thoại" value=""> <br>
+      <input class="in" type="password" placeholder="Mật khẩu" value=""> <br>
+      <input class="in" type="password" placeholder="Lấy lại mật khẩu" value=""> <br>
+      <p class="id">9e573</p>
+      <input class="in" type="text" placeholder="Nhập mã trên"> <br>
+      <button class="dk" type="button" onclick="database()">Đăng ký</button>
     <p>Bạn đã có tài khoản?<button>đăng nhập ngay</button></p>
+    </form>
     
+    <div id="db"></div>
   </body>
 </html>
